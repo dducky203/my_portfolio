@@ -1,0 +1,46 @@
+.language-switcher {
+  background: none;
+  border: 2px solid var(--primary-color);
+  border-radius: 25px;
+  padding: 8px 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--primary-color);
+}
+
+.language-switcher:hover {
+  background: var(--primary-color);
+  color: white;
+}
+
+.language-switcher span {
+  transition: all 0.3s ease;
+}
+
+.language-switcher span.active {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.language-switcher:hover span.active {
+  color: white;
+}
+
+.language-switcher:hover span:not(.active) {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.separator {
+  opacity: 0.5;
+}
+
+@media (max-width: 768px) {
+  .language-switcher {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+  }
+}
