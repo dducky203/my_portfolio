@@ -4,6 +4,8 @@ import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import { useLanguage } from "../../contexts/LanguageContext";
 import { translations } from "../../data/translations";
 import "./Projects.css";
+import movieAppImage from "../../assets/projectImg/movie-app.png";
+import homeImg from "../../assets/projectImg/home.png";
 
 const Projects = () => {
   const { language } = useLanguage();
@@ -13,18 +15,19 @@ const Projects = () => {
     {
       title: t.projects.items[0].title,
       description: t.projects.items[0].description,
-      image: "https://via.placeholder.com/400x250?text=E-Commerce+Project",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
-      githubLink: "#",
-      liveLink: "#",
+      image: homeImg,
+      technologies: ["React", "Redux", "Node.js", "Express.js", "MongoDB" ],
+      githubLink: "https://github.com/lnduong203/Home-Rentals",
+      liveLink: "https://home-rentals-ten.vercel.app",
+      // dashBoardLink: "https://home-rentals-admin.vercel.app",
     },
     {
       title: t.projects.items[1].title,
       description: t.projects.items[1].description,
-      image: "https://via.placeholder.com/400x250?text=Task+Management+App",
-      technologies: ["React", "TypeScript", "Firebase", "Material-UI"],
-      githubLink: "#",
-      liveLink: "#",
+      image: movieAppImage,
+      technologies: ["React", "TypeScript", "Vercel", "Material-UI"],
+      githubLink: "https://github.com/lnduong203/MovieApp_CloneNETFLIX",
+      liveLink: "https://movie-app-clone-netflix.vercel.app",
     },
     {
       title: t.projects.items[2].title,
@@ -72,12 +75,17 @@ const Projects = () => {
                 <img src={project.image} alt={project.title} />
                 <div className="project-overlay">
                   <div className="project-links">
-                    <a href={project.githubLink} className="project-link">
+                    <a href={project.githubLink} title="GitHub Repository" className="project-link">
                       <FaGithub />
                     </a>
-                    <a href={project.liveLink} className="project-link">
+                    <a href={project.liveLink} title="Live Demo" className="project-link">
                       <FaExternalLinkAlt />
                     </a>
+                    {project.dashBoardLink && (
+                      <a href={project.dashBoardLink} title="Dashboard" className="project-link">
+                        <FaExternalLinkAlt />
+                      </a>
+                    )}
                   </div>
                 </div>
               </div>

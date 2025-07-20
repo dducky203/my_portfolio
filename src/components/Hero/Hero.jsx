@@ -12,9 +12,9 @@ const Hero = () => {
   const t = translations[language];
 
   const handleDownloadCV = () => {
-    // Create a link element and trigger download
+    
     const link = document.createElement("a");
-    link.href = language === "en" ? linkCvEng : linkCvVN; // File in public folder
+    link.href = language === "en" ? linkCvEng : linkCvVN; 
     link.download =
       language === "en" ? "CV-Eng-DuongLeNgoc.pdf" : "CV-VN-LeNgocDuong.pdf";
     document.body.appendChild(link);
@@ -52,10 +52,16 @@ const Hero = () => {
               <a href="https://github.com/dducky203" className="social-link">
                 <FaGithub />
               </a>
-              <a href="https://www.linkedin.com/in/le-ngoc-duong-4b6bb326a" className="social-link">
+              <a
+                href="https://www.linkedin.com/in/le-ngoc-duong-4b6bb326a"
+                className="social-link"
+              >
                 <FaLinkedin />
               </a>
-              <a href="https://www.facebook.com/ngocduong203" className="social-link">
+              <a
+                href="https://www.facebook.com/ngocduong203"
+                className="social-link"
+              >
                 <FaFacebook />
               </a>
             </div>

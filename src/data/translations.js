@@ -13,9 +13,9 @@ export const translations = {
     hero: {
       greeting: "Hello, I'm",
       name: "Duong Le Ngoc",
-      title: "Frontend Developer",
+      title: "Web Application Developer",
       description:
-        "I create beautiful and functional web applications using modern technologies like React, JavaScript, and CSS. Passionate about clean code and user experience.",
+        "I create beautiful and functional web applications using modern technologies like React, JavaScript, TypeScript...Passionate about clean code and user experience.",
       viewWork: "View My Work",
       getInTouch: "Get In Touch",
       downloadCV: "Download CV",
@@ -46,14 +46,14 @@ export const translations = {
       title: "Featured Projects",
       items: [
         {
-          title: "E-Commerce Website",
+          title: "Home rental Website",
           description:
-            "A modern e-commerce platform built with React, featuring product catalog, shopping cart, and payment integration.",
+            "A modern home rental platform built with React, featuring property listings, booking management, and user authentication.",
         },
         {
-          title: "Task Management App",
+          title: "Movie App - Clone Netflix",
           description:
-            "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
+            "A movie streaming application that allows users to browse and watch their favorite films and TV shows.",
         },
         {
           title: "Weather Dashboard",
@@ -115,9 +115,9 @@ export const translations = {
     hero: {
       greeting: "Xin chào, tôi là",
       name: "Lê Ngọc Dương",
-      title: "Lập Trình Viên Frontend",
+      title: "Nhà phát triển Ứng dụng Web",
       description:
-        "Tôi tạo ra những ứng dụng web đẹp và chức năng bằng các công nghệ hiện đại như React, JavaScript và CSS. Đam mê với code sạch và trải nghiệm người dùng.",
+        "Tôi tạo ra những ứng dụng web đẹp và chức năng bằng các công nghệ hiện đại như React, JavaScript, TypeScript...Đam mê với code sạch và trải nghiệm người dùng.",
       viewWork: "Xem Công Việc",
       getInTouch: "Liên Hệ Ngay",
       downloadCV: "Tải CV",
@@ -153,9 +153,9 @@ export const translations = {
             "Một nền tảng thương mại điện tử hiện đại được xây dựng bằng React, bao gồm danh mục sản phẩm, giỏ hàng và tích hợp thanh toán.",
         },
         {
-          title: "Ứng Dụng Quản Lý Công Việc",
+          title: "Web Xem Phim - Clone Netflix",
           description:
-            "Một ứng dụng quản lý công việc cộng tác với cập nhật thời gian thực, chức năng kéo thả và tính năng cộng tác nhóm.",
+            "Một ứng dụng clone Netflix với giao diện đẹp và chức năng phát video mượt mà.",
         },
         {
           title: "Bảng Điều Khiển Thời Tiết",
@@ -198,7 +198,7 @@ export const translations = {
     // Footer
     footer: {
       madeWith: "Được tạo với",
-      by: "bởi Lê Ng",
+      by: "bởi Lê Ngọc Dương",
       rights: "Bảo lưu mọi quyền.",
     },
   },
