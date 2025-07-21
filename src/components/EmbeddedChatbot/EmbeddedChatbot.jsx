@@ -23,8 +23,13 @@ const EmbeddedChatbot = () => {
   const messagesEndRef = useRef(null);
   const inputRef = useRef(null);
 
-  const API_BASE_URL = "http://localhost:5000"; // Địa chỉ chatbot server
+  // Use deployed API URL or fallback to localhost for development
+  const API_BASE_URL = import.meta.env.VITE_CHATBOT_API_URL || "http://localhost:5000";
 
+  // Log API URL for debugging (remove in production)
+  console.log('Chatbot API URL:', API_BASE_URL);
+
+  
   // Update welcome message when language changes
   useEffect(() => {
     setMessages((prevMessages) => [
@@ -117,6 +122,10 @@ const EmbeddedChatbot = () => {
         }),
       });
 
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+
       const data = await response.json();
 
       setTimeout(() => {
@@ -124,6 +133,10 @@ const EmbeddedChatbot = () => {
           id: Date.now() + 1,
           text: data.success
             ? data.response
+            : data.error && data.error.includes('quota')
+            ? language === "en"
+              ? "I'm temporarily unavailable due to API quota limits. Please try again later! 🤖"
+              : "Tôi tạm thời không khả dụng do giới hạn quota API. Vui lòng thử lại sau! 🤖"
             : language === "en"
             ? "Sorry, I encountered a technical issue. Please try again! 😅"
             : "Xin lỗi, tôi gặp chút vấn đề kỹ thuật. Vui lòng thử lại sau! 😅",
@@ -133,7 +146,7 @@ const EmbeddedChatbot = () => {
 
         setMessages((prev) => [...prev, botMessage]);
         setIsTyping(false);
-        setIsOnline(data.success);
+        setIsOnline(data.success || response.ok);
       }, 1000 + Math.random() * 1000);
     } catch (error) {
       setTimeout(() => {
