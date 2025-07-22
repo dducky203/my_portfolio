@@ -24,7 +24,7 @@ const EmbeddedChatbot = () => {
   const inputRef = useRef(null);
 
   // Use deployed API URL or fallback to localhost for development
-  const API_BASE_URL = import.meta.env.VITE_CHATBOT_API_URL || "http://localhost:5000";
+  const API_BASE_URL = import.meta.env.VITE_CHATBOT_API_URL;
 
   // Log API URL for debugging (remove in production)
   console.log('Chatbot API URL:', API_BASE_URL);
