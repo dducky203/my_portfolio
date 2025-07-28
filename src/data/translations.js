@@ -24,14 +24,14 @@ export const translations = {
     // About Section
     about: {
       title: "About Me",
-      subtitle: "Frontend Developer & UI/UX Enthusiast",
+      subtitle: "Backend Developer & Frontend ",
       description1:
-        "I'm a passionate frontend developer with 3+ years of experience creating engaging and user-friendly web applications. I love turning complex problems into simple, beautiful, and intuitive solutions.",
+        "I'm a passionate backend developer with 3 months of hands-on experience creating robust and scalable server-side applications. I also have frontend development capabilities, allowing me to work across the full stack when needed.",
       description2:
-        "My goal is to build applications that not only function perfectly but also provide exceptional user experiences. I'm always eager to learn new technologies and improve my skills.",
+        "My goal is to build applications that not only function perfectly but also provide exceptional performance and reliability. I'm always eager to learn new technologies and improve my skills.",
       stats: {
         projects: "Projects Completed",
-        experience: "Years Experience",
+        experience: "Months Experience",
         clients: "Happy Clients",
       },
     },
@@ -126,14 +126,14 @@ export const translations = {
     // About Section
     about: {
       title: "Giới Thiệu Về Tôi",
-      subtitle: "Lập Trình Viên Frontend & Người Đam Mê UI/UX",
+      subtitle: "Lập Trình Viên Backend & Frontend",
       description1:
-        "Tôi là một lập trình viên frontend đam mê với hơn 3 năm kinh nghiệm tạo ra các ứng dụng web hấp dẫn và thân thiện với người dùng. Tôi thích biến những vấn đề phức tạp thành những giải pháp đơn giản, đẹp và trực quan.",
+        "Tôi là một lập trình viên backend đam mê với 3 tháng kinh nghiệm thực chiến tạo ra các ứng dụng phía máy chủ mạnh mẽ và có thể mở rộng. Tôi cũng có khả năng phát triển frontend, cho phép tôi làm việc trên toàn bộ stack khi cần thiết.",
       description2:
-        "Mục tiêu của tôi là xây dựng những ứng dụng không chỉ hoạt động hoàn hảo mà còn mang lại trải nghiệm người dùng tuyệt vời. Tôi luôn háo hức học hỏi công nghệ mới và cải thiện kỹ năng.",
+        "Mục tiêu của tôi là xây dựng những ứng dụng không chỉ hoạt động hoàn hảo mà còn mang lại hiệu suất và độ tin cậy tuyệt vời. Tôi luôn háo hức học hỏi công nghệ mới và cải thiện kỹ năng.",
       stats: {
         projects: "Dự Án Hoàn Thành",
-        experience: "Năm Kinh Nghiệm",
+        experience: "Tháng Kinh Nghiệm",
         clients: "Khách Hàng Hài Lòng",
       },
     },

@@ -29,22 +29,22 @@ const Projects = () => {
       githubLink: "https://github.com/lnduong203/MovieApp_CloneNETFLIX",
       liveLink: "https://movie-app-clone-netflix.vercel.app",
     },
-    {
-      title: t.projects.items[2].title,
-      description: t.projects.items[2].description,
-      image: "https://via.placeholder.com/400x250?text=Weather+Dashboard",
-      technologies: ["React", "API Integration", "CSS3", "Chart.js"],
-      githubLink: "#",
-      liveLink: "#",
-    },
-    {
-      title: t.projects.items[3].title,
-      description: t.projects.items[3].description,
-      image: "https://via.placeholder.com/400x250?text=Portfolio+Website",
-      technologies: ["React", "Framer Motion", "CSS3", "Vite"],
-      githubLink: "#",
-      liveLink: "#",
-    },
+    // {
+    //   title: t.projects.items[2].title,
+    //   description: t.projects.items[2].description,
+    //   image: "https://via.placeholder.com/400x250?text=Weather+Dashboard",
+    //   technologies: ["React", "API Integration", "CSS3", "Chart.js"],
+    //   githubLink: "#",
+    //   liveLink: "#",
+    // },
+    // {
+    //   title: t.projects.items[3].title,
+    //   description: t.projects.items[3].description,
+    //   image: "https://via.placeholder.com/400x250?text=Portfolio+Website",
+    //   technologies: ["React", "Framer Motion", "CSS3", "Vite"],
+    //   githubLink: "#",
+    //   liveLink: "#",
+    // },
   ];
 
   return (
