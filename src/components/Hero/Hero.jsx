@@ -5,7 +5,7 @@ import { translations } from "../../data/translations";
 import "./Hero.css";
 import profileImage from "../../assets/avatar/avatar.jpg";
 import linkCvVN from "../../assets/pdf/CV-InternWeb-LeNgocDuong.pdf";
-import linkCvEng from "../../assets/pdf/CV-InternWeb-LeNgocDuong.pdf";
+import linkCvEng from "../../assets/pdf/CV_English-InternWeb-LeNgocDuong.pdf";
 
 const Hero = () => {
   const { language } = useLanguage();
