@@ -73,7 +73,14 @@ class PortfolioChatbot:
         elif intent == "contact":
             contact_text = f"Thông tin liên hệ với {PERSONAL_INFO['name']}:\n\n"
             contact_text += f"📧 Email: {CONTACT_INFO['email']}\n"
+            contact_text += f"📞 Phone: {CONTACT_INFO.get('phone', 'N/A')}\n"
             contact_text += f"📍 Vị trí: {CONTACT_INFO['location']}\n"
+            # Thêm mạng xã hội nếu có
+            if CONTACT_INFO.get('linkedin'):
+                contact_text += f"🔗 LinkedIn: {CONTACT_INFO['linkedin']}\n"
+            if CONTACT_INFO.get('facebook'):
+                contact_text += f"📘 Facebook: {CONTACT_INFO['facebook']}\n"
+            contact_text += f"🐙 GitHub: {CONTACT_INFO.get('github', 'N/A')}\n"
             contact_text += f"💼 {CONTACT_INFO['availability']}\n"
             contact_text += f"📄 CV: {CONTACT_INFO['cv']}"
             return contact_text

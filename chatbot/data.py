@@ -88,6 +88,8 @@ CONTACT_INFO = {
     "phone": "+84962498015", 
     "location": "Hà Nội, Việt Nam",
     "github": "https://github.com/dducky203",
+    "linkedin": "https://www.linkedin.com/in/duong-le-ngoc" ,  # Cập nhật nếu khác
+    "facebook": "https://www.facebook.com/",  # Cập nhật link Facebook cụ thể
     "portfolio": "Website portfolio hiện tại",
     "availability": "Luôn quan tâm đến những cơ hội mới và các dự án thú vị",
     "cv": "Có thể tải CV từ website portfolio",
@@ -101,7 +103,7 @@ QUESTION_PATTERNS = {
     "experience": ["kinh nghiệm", "experience", "làm việc bao lâu", "years", "năm"],
     "skills": ["kỹ năng", "skills", "biết gì", "công nghệ", "technology", "tech stack"],
     "projects": ["dự án", "projects", "đã làm gì", "portfolio", "work"],
-    "contact": ["liên hệ", "contact", "email", "phone", "số điện thoại"],
+    "contact": ["liên hệ", "contact", "email", "phone", "số điện thoại", "facebook", "linkedin", "mạng xã hội"],
     "description": ["mô tả", "giới thiệu", "about", "description", "bạn là ai"],
     "stats": ["thống kê", "stats", "số liệu", "achievement"]
 }
